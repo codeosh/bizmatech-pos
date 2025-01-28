@@ -1,0 +1,25 @@
+@import "bootstrap/scss/bootstrap";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: rgb(241, 245, 249);
+    font-family: "Poppins", sans-serif;
+}
+.body-content {
+    display: grid;
+}
+
+.btn-glow {
+    box-shadow: 0 0 10px rgb(0, 191, 255);
+}
+
+@media (max-width: 412px) {
+    .mt-custom {
+        margin-top: 1rem;
+    }
+}
