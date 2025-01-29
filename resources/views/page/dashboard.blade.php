@@ -3,6 +3,10 @@
 
 @section('title', 'BizmaTech - Dashboard - POS')
 
+@push('subnav-title')
+Dashboard
+@endpush
+
 @section('content')
-<h1>Dashboard</h1>
+@include('layout.subnav_header')
 @endsection

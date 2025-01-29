@@ -22,7 +22,6 @@
             {{-- Sidebar Contents --}}
             @include('layout.sidebar')
 
-
             {{-- Main Content --}}
             <div class="main-content">
                 @yield('content')
