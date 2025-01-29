@@ -16,14 +16,14 @@
 
     <body>
         <div class="body-content">
-            <div class="navbar">
+            {{-- Navbar Contents --}}
+            @include('layout.navbar')
 
-            </div>
+            {{-- Sidebar Contents --}}
+            @include('layout.sidebar')
 
-            <div class="sidebar">
 
-            </div>
-
+            {{-- Main Content --}}
             <div class="main-content">
                 @yield('content')
             </div>

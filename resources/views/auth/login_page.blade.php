@@ -19,45 +19,47 @@
 
     <body>
         <div class="d-flex justify-content-center align-items-center h-100 p-3">
-            <div class="card ">
-                <div class="card-body">
-                    <div class="row align-items-stretch h-100">
-                        <div class="col-md-6">
-                            {{-- Logo Column --}}
-                            <div class="border rounded p-3 w-100 mt-2">
-                                <img src="{{asset('images/pictures/bizma-logo.png')}}" alt="BizmaTech Logo"
-                                    class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="col-md-6 d-flex align-items-center mt-custom">
-                            <div class="w-100">
-                                <div class="d-flex align-items-center mb-3">
-                                    <h4 class="fw-bold mb-0">
-                                        <span style="color: #3b5998;">BizmaTech POS</span> - Login
-                                    </h4>
+            <div class="container">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row align-items-stretch h-100">
+                            <div class="col-md-6">
+                                {{-- Logo Column --}}
+                                <div class="border rounded p-3 w-100 mt-2">
+                                    <img src="{{asset('images/pictures/bizma-logo.png')}}" alt="BizmaTech Logo"
+                                        class="img-fluid">
                                 </div>
-                                <form id="loginForm">
-                                    @csrf
-                                    {{-- Input Credentials --}}
-                                    <label class="form-label">Username:</label>
-                                    <input type="text" class="form-control" name="username" id="username"
-                                        placeholder="Enter Username">
-                                    <label class="form-label mt-3">Password:</label>
-                                    <input type="password" name="password" id="password" class="form-control mb-3"
-                                        placeholder="Enter Password">
-
-                                    {{-- Show Password --}}
-                                    <div class="d-flex justify-content-end mb-3">
-                                        <input type="checkbox" class="form-check-input" id="showPassword">
-                                        <label class="form-check-label ms-2" for="showPassword">Show
-                                            Password</label>
+                            </div>
+                            <div class="col-md-6 d-flex align-items-center mt-custom">
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <h4 class="fw-bold mb-0">
+                                            <span style="color: #3b5998;">BizmaTech POS</span> - Login
+                                        </h4>
                                     </div>
+                                    <form id="loginForm">
+                                        @csrf
+                                        {{-- Input Credentials --}}
+                                        <label class="form-label">Username:</label>
+                                        <input type="text" class="form-control" name="username" id="username"
+                                            placeholder="Enter Username">
+                                        <label class="form-label mt-3">Password:</label>
+                                        <input type="password" name="password" id="password" class="form-control mb-3"
+                                            placeholder="Enter Password">
 
-                                    {{-- Login Button --}}
-                                    <div class="d-flex justify-content-end">
-                                        <button type="submit" class="btn btn-primary w-100 btn-glow">Login</button>
-                                    </div>
-                                </form>
+                                        {{-- Show Password --}}
+                                        <div class="d-flex justify-content-end mb-3">
+                                            <input type="checkbox" class="form-check-input" id="showPassword">
+                                            <label class="form-check-label ms-2" for="showPassword">Show
+                                                Password</label>
+                                        </div>
+
+                                        {{-- Login Button --}}
+                                        <div class="d-flex justify-content-end">
+                                            <button type="submit" class="btn btn-primary w-100 btn-glow">Login</button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
