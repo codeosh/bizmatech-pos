@@ -4,7 +4,7 @@
 @section('title', 'BizmaTech - Dashboard - POS')
 
 @push('subnav-title')
-Dashboard
+<span style="color: white;  font-size: 25px;">Dashboard</span>
 @endpush
 
 @section('content')
