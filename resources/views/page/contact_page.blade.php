@@ -54,6 +54,7 @@
 </button>
 
 <!-- Modal -->
+<!-- Modal -->
 <div class="modal fade" id="addNewModal" tabindex="-1" aria-labelledby="addNewModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -93,7 +94,14 @@
                         <div class="col-md-6">
                             <div class="mb-3">
                                 <label for="group" class="form-label">Group</label>
-                                <input type="text" class="form-control" id="group" required>
+                                <select class="form-select" id="group" required>
+                                    <option value="" disabled selected>Select a group</option>
+                                    <option value="Customer">Customer</option>
+                                    <option value="Supplier">Supplier</option>
+                                    <option value="VIP">VIP</option>
+                                    <option value="Friends">Friends</option>
+                                    <option value="Unspecified">Unspecified</option>
+                                </select>
                             </div>
                             <div class="mb-3">
                                 <label for="vatTin" class="form-label">VAT TIN (NOS.)</label>
@@ -126,14 +134,12 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="submit" form="addNewForm" class="btn btn-primary btn-glow">Save</button>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" form="addNewForm" class="btn btn-primary">Save changes</button>
             </div>
         </div>
     </div>
 </div>
-
-
             <!-- Print Button -->
             <button class="btn btn-secondary" type="button" id="print-button">
                 <i class="fa-solid fa-print"></i> Print
