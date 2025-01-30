@@ -13,7 +13,7 @@ body {
 .body-content {
     height: 100vh;
     display: grid;
-    grid-template-rows: 60px 1fr;
+    grid-template-rows: 45px 1fr;
     grid-template-columns: 250px 1fr;
     grid-template-areas:
         "navbar navbar"
@@ -43,10 +43,14 @@ body {
 }
 .sidebar-items:hover {
     border: 1px solid rgb(163, 163, 163);
-    padding: 10px !important;
     background: #e7e7e7;
 }
-
+/* Active State */
+.sidebar-items.active {
+    border: 1px solid rgb(163, 163, 163);
+    background: #e7e7e7;
+    font-weight: bold;
+}
 // End of Sidebar
 
 // Styles for the Main Content
@@ -58,12 +62,15 @@ body {
 
 // Styles for the Sub Nav
 .sub-nav {
-    min-height: 60px;
+    min-height: 45px;
     background: #139904;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding-right: 10px;
+}
+.subnav-title h5 {
+    margin-bottom: 0;
 }
 // End of Sub Nav
 

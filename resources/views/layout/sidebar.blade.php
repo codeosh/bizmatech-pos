@@ -21,7 +21,8 @@
                 <!-- Username and Role -->
                 <div class="col-md-8 d-flex justify-content-center align-items-center">
                     <div style="line-height: 1.2rem; white-space: nowrap; width: 100%;">
-                        <p class="mb-0 fw-bold user-name text-truncate">Derek Joshua T. Catigan</p>
+                        <p class="mb-0 fw-bold user-name text-truncate">Derek Joshua T.
+                            Catigan</p>
                         <small class="text-muted user-role text-truncate">Admin</small>
                     </div>
                 </div>
@@ -42,7 +43,7 @@
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                            <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
                         </ul>
                     </div>
                 </div>
@@ -55,24 +56,28 @@
         <ul class="list-unstyled">
             <!-- Sidebar Item -->
             <li class="sidebar-item mb-2">
-                <a href="#" class="sidebar-items text-decoration-none text-dark d-block p-2 rounded">
+                <a href="{{ route('dashboard.page') }}"
+                    class="sidebar-items text-decoration-none text-dark d-block p-2 rounded {{ request()->routeIs('dashboard.page') ? 'active' : '' }}">
                     <i class="fa-solid fa-desktop me-2"></i> Dashboard
                 </a>
             </li>
 
             <!-- Sidebar Item -->
             <li class="sidebar-item mb-2">
-                <a href="#" class="sidebar-items text-decoration-none text-dark d-block p-2 rounded">
+                <a href="{{ route('item-category.page') }}"
+                    class="sidebar-items text-decoration-none text-dark d-block p-2 rounded {{ request()->routeIs('item-category.page') ? 'active' : '' }}">
                     <i class="fas fa-address-book me-2"></i> Items Category
                 </a>
             </li>
 
             <!-- Sidebar Item -->
             <li class="sidebar-item mb-2">
-                <a href="#" class="sidebar-items text-decoration-none text-dark d-block p-2 rounded">
+                <a href="{{ route('contact-page.page') }}"
+                    class="sidebar-items text-decoration-none text-dark d-block p-2 rounded {{ request()->routeIs('contact-page.page') ? 'active' : '' }}">
                     <i class="fas fa-address-book me-2"></i> Contacts
                 </a>
             </li>
         </ul>
     </div>
+
 </div>
