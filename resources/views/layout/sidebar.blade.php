@@ -56,7 +56,14 @@
             <!-- Sidebar Item -->
             <li class="sidebar-item mb-2">
                 <a href="#" class="sidebar-items text-decoration-none text-dark d-block p-2 rounded">
-                    <i class="fas fa-box me-2"></i> Item Category
+                    <i class="fa-solid fa-desktop me-2"></i> Dashboard
+                </a>
+            </li>
+
+            <!-- Sidebar Item -->
+            <li class="sidebar-item mb-2">
+                <a href="#" class="sidebar-items text-decoration-none text-dark d-block p-2 rounded">
+                    <i class="fas fa-address-book me-2"></i> Items Category
                 </a>
             </li>
 

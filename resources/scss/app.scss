@@ -37,6 +37,16 @@ body {
     padding: 5px;
     border-radius: 5px;
 }
+.btn-droplink {
+    border: 1px solid red;
+    width: 200px;
+}
+.sidebar-items:hover {
+    border: 1px solid rgb(163, 163, 163);
+    padding: 10px !important;
+    background: #e7e7e7;
+}
+
 // End of Sidebar
 
 // Styles for the Main Content
@@ -59,6 +69,13 @@ body {
 
 .btn-glow {
     box-shadow: 0 0 10px rgb(0, 191, 255);
+}
+
+.btn-hover-glow:hover {
+    box-shadow: 0 0 10px rgb(0, 191, 255);
+}
+.btn-hover-glow-danger:hover {
+    box-shadow: 0 0 10px rgb(255, 46, 109);
 }
 
 @media (max-width: 412px) {
