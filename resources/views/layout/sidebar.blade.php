@@ -1,7 +1,7 @@
 {{-- resources\views\layout\sidebar.blade.php --}}
 <div class="sidebar">
     <!-- Profile Header -->
-    <div class="profile-header p-3">
+    <div class="profile-header p-2">
         <!-- Title -->
         <div class="text-center mb-3">
             <h4 class="mb-0 fw-bold profile-title">BizmaTech POS</h4>
@@ -11,17 +11,39 @@
         <hr class="my-2">
 
         <!-- User Avatar, Username, and Role -->
-        <div class="profile-contents">
-            <div class="row">
-                <div class="col-md-4 d-flex justify-content-center align-items-center">
-                    <!-- User Avatar -->
+        <div class="profile-contents card">
+            <div class="row g-0">
+                <!-- User Avatar -->
+                <div class="col-md-3 d-flex justify-content-center align-items-center">
                     <i class="fa-solid fa-user fa-lg"></i>
                 </div>
-                <div class="col-md-6 d-flex justify-content-center align-items-center">
-                    <!-- Username and Role -->
-                    <div style="line-height: 1.3rem;">
-                        <p class="mb-0 fw-bold">John Doe</p>
-                        <small class="text-muted">Admin</small>
+
+                <!-- Username and Role -->
+                <div class="col-md-8 d-flex justify-content-center align-items-center">
+                    <div style="line-height: 1.2rem; white-space: nowrap; width: 100%;">
+                        <p class="mb-0 fw-bold user-name text-truncate">Derek Joshua T. Catigan</p>
+                        <small class="text-muted user-role text-truncate">Admin</small>
+                    </div>
+                </div>
+
+                <!-- Dropdown Button -->
+                <div class="col-md-1 d-flex justify-content-center align-items-center">
+                    <div class="dropdown">
+                        <!-- Dropdown Toggle Button -->
+                        <button class="btn btn-link text-dark" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+
+                        <!-- Dropdown Menu -->
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>

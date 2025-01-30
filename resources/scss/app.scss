@@ -32,7 +32,11 @@ body {
     grid-area: sidebar;
     background: #fff;
 }
-
+.profile-contents {
+    overflow: visible;
+    padding: 5px;
+    border-radius: 5px;
+}
 // End of Sidebar
 
 // Styles for the Main Content
