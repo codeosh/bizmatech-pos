@@ -56,6 +56,7 @@ Contact Lists
                 <i class="fa-solid fa-plus"></i> Add New
             </button>
 
+<<<<<<< HEAD
             <!-- Modal -->
             <div class="modal fade" id="addNewModal" tabindex="-1" aria-labelledby="addNewModalLabel"
                 aria-hidden="true">
@@ -64,6 +65,43 @@ Contact Lists
                         <div class="modal-header">
                             <h5 class="modal-title" id="addNewModalLabel">Add New Record</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+=======
+<!-- Modal -->
+<!-- Modal -->
+<div class="modal fade" id="addNewModal" tabindex="-1" aria-labelledby="addNewModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addNewModalLabel">Add New Record</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Form inside the modal -->
+                <form id="addNewForm">
+                    <div class="row">
+                        <!-- Left Column -->
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="seqCode" class="form-label">SeQ-Code</label>
+                                <input type="text" class="form-control" id="seqCode" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="f1IdNumber" class="form-label">[F1] ID Number</label>
+                                <input type="text" class="form-control" id="f1IdNumber" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="f2Id" class="form-label">[F2] ID</label>
+                                <input type="text" class="form-control" id="f2Id" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="customerName" class="form-label">[F3] Customer/Consignee Name</label>
+                                <input type="text" class="form-control" id="customerName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactPerson" class="form-label">Contact Person</label>
+                                <input type="text" class="form-control" id="contactPerson" required>
+                            </div>
+>>>>>>> dd5c0d739feba932c6972a6dc2ce037d0135116b
                         </div>
                         <div class="modal-body">
                             <!-- Form inside the modal -->
@@ -94,6 +132,7 @@ Contact Lists
                                         </div>
                                     </div>
 
+<<<<<<< HEAD
                                     <!-- Right Column -->
                                     <div class="col-md-6">
                                         <div class="mb-3">
@@ -134,12 +173,53 @@ Contact Lists
                         <div class="modal-footer">
                             <button type="submit" form="addNewForm" class="btn btn-primary btn-glow">Save</button>
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+=======
+                        <!-- Right Column -->
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="group" class="form-label">Group</label>
+                                <select class="form-select" id="group" required>
+                                    <option value="" disabled selected>Select a group</option>
+                                    <option value="Customer">Customer</option>
+                                    <option value="Supplier">Supplier</option>
+                                    <option value="VIP">VIP</option>
+                                    <option value="Friends">Friends</option>
+                                    <option value="Unspecified">Unspecified</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="vatTin" class="form-label">VAT TIN (NOS.)</label>
+                                <input type="text" class="form-control" id="vatTin" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="termsOfPayment" class="form-label">Terms of Payment</label>
+                                <input type="text" class="form-control" id="termsOfPayment" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="address" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactNo" class="form-label">Contact No.</label>
+                                <input type="text" class="form-control" id="contactNo" required>
+                            </div>
+>>>>>>> dd5c0d739feba932c6972a6dc2ce037d0135116b
                         </div>
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
 
 
+=======
+            <div class="modal-footer">
+                <button type="submit" form="addNewForm" class="btn btn-primary btn-glow">Save</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+>>>>>>> dd5c0d739feba932c6972a6dc2ce037d0135116b
             <!-- Print Button -->
             <button class="btn btn-secondary" type="button" id="print-button">
                 <i class="fa-solid fa-print"></i> Print
