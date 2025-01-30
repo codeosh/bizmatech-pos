@@ -20,18 +20,29 @@ body {
         "sidebar main";
 }
 
+// Styles for the Navbar Header
 .navbar-header {
     grid-area: navbar;
     background: #1d6fa2;
 }
+// End of Navbar Header
+
+// Styles for the Sidebar
 .sidebar {
     grid-area: sidebar;
     background: #fff;
 }
+
+// End of Sidebar
+
+// Styles for the Main Content
 .main-content {
     grid-area: main;
     background: #f1f5f9;
 }
+// End of Main Content
+
+// Styles for the Sub Nav
 .sub-nav {
     min-height: 60px;
     background: #139904;
@@ -40,6 +51,7 @@ body {
     justify-content: flex-end;
     padding-right: 10px;
 }
+// End of Sub Nav
 
 .btn-glow {
     box-shadow: 0 0 10px rgb(0, 191, 255);
