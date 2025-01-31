@@ -38,5 +38,6 @@ Item Categories
     </div>
 
     @include('partials.tblitem_category', ['categories' => $categories])
+    sad
 </div>
 @endsection
