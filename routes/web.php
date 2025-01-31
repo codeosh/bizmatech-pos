@@ -21,6 +21,9 @@ Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard
 
 // Item Category Routes
 Route::get('/item-category', [ItemCategoryController::class, 'index'])->name('item-category.page');
+Route::post('/item-category/store', [ItemCategoryController::class, 'store'])->name('itemcategory.store');
+Route::delete('/item-category/{id}', [ItemCategoryController::class, 'destroy'])->name('item-category.destroy');
+
 
 // Contact Page Routes
 Route::get('/contact-page', [ContactController::class, 'index'])->name('contact-page.page');

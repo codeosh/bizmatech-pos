@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('tbl_category', function (Blueprint $table) {
             $table->id();
+            $table->string('unitcode')->nullable();
+            $table->double('amount_sold')->nullable();
+            $table->double('profit')->nullable();
+            $table->double('item_sold')->nullable();
+            $table->double('item_profit')->nullable();
+            $table->double('product_num')->nullable();
+            $table->longText('item_desc')->nullable();
             $table->timestamps();
         });
     }
