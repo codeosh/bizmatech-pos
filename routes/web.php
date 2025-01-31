@@ -4,6 +4,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Page\DashboardController;
 use App\Http\Controllers\Page\ItemCategoryController;
 use App\Http\Controllers\Page\ContactController;
+use App\Http\Controllers\Page\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -12,6 +13,8 @@ Route::get('/', function () {
 
 Route::post('/login', [LoginController::class, 'login'])->name('login.submit');
 
+// Profile Page Routes
+Route::get('/profile', [ProfileController::class, 'index'])->name('profile.page');
 
 // Dashboard Routes
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.page');
