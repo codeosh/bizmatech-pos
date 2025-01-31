@@ -177,37 +177,37 @@ Contact Lists
                             </div>
                         </div>
 
-                        <!-- Right Column -->
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label for="group" class="form-label">Group</label>
-                                <select class="form-select" id="group" required>
-                                    <option value="" disabled selected>Select a group</option>
-                                    <option value="Customer">Customer</option>
-                                    <option value="Supplier">Supplier</option>
-                                    <option value="VIP">VIP</option>
-                                    <option value="Friends">Friends</option>
-                                    <option value="Unspecified">Unspecified</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label for="vatTin" class="form-label">VAT TIN (NOS.)</label>
-                                <input type="text" class="form-control" id="vatTin" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="termsOfPayment" class="form-label">Terms of Payment</label>
-                                <input type="text" class="form-control" id="termsOfPayment" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="address" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="address" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="contactNo" class="form-label">Contact No.</label>
-                                <input type="text" class="form-control" id="contactNo" required>
+                            <!-- Right Column -->
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="group" class="form-label">Group</label>
+                                    <select class="form-select" id="group" required>
+                                        <option value="" disabled selected>Select a group</option>
+                                        <option value="Customer">Customer</option>
+                                        <option value="Supplier">Supplier</option>
+                                        <option value="VIP">VIP</option>
+                                        <option value="Friends">Friends</option>
+                                        <option value="Unspecified">Unspecified</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="vatTin" class="form-label">VAT TIN (NOS.)</label>
+                                    <input type="text" class="form-control" id="vatTin" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="termsOfPayment" class="form-label">Terms of Payment</label>
+                                    <input type="text" class="form-control" id="termsOfPayment" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="address" class="form-label">Address</label>
+                                    <input type="text" class="form-control" id="address" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contactNo" class="form-label">Contact No.</label>
+                                    <input type="text" class="form-control" id="contactNo" required>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
                     <!-- Full-width Row for Note/Comment -->
                     <div class="row">

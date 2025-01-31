@@ -33,12 +33,12 @@
                         <!-- Dropdown Toggle Button -->
                         <button class="btn btn-link text-dark" type="button" id="dropdownMenuButton"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-ellipsis-v"></i>
+                            <i class="fas fa-sort-down text-secondary mb-3"></i>
                         </button>
 
                         <!-- Dropdown Menu -->
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="{{route('profile.page')}}">Profile</a></li>
                             <li><a class="dropdown-item" href="#">Settings</a></li>
                             <li>
                                 <hr class="dropdown-divider">
