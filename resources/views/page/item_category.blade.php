@@ -62,7 +62,8 @@ Item Categories
                     <!-- Buttons Column -->
                     <div class="col-md-2">
                         <!-- Add NewButton -->
-                        <button type="add" class="btn btn-primary btn-glow w-70 mb-2">Add New</button>
+                        <button type="add" class="btn btn-primary btn-glow w-70 mb-2">
+                        <i class="fa-solid fa-plus"></i>Add New</button>
                         <!-- Reset Button -->
                         <button type="reset" class="btn btn-secondary w-95 mb-2">Reset</button>
                     </div>
@@ -86,64 +87,80 @@ Item Categories
                                     <td>Others</td>
                                     <td style="width: auto;">
                                         <!-- Set width to auto -->
-                                        <button class="btn btn-primary btn-glow btn-sm">Update</button>
-                                        <button class="btn btn-danger btn-sm">Delete</button>
+                                        <button class="btn btn-primary btn-glow btn-sm">
+                                        <i class="fa-solid fa-pencil"></i> Update</button>
+                                        <button class="btn btn-danger btn-sm">
+                                        <i class="fa-solid fa-trash"></i> Delete</button>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>C002</td>
                                     <td>Pi Stocks</td>
                                     <td style="width: auto;">
-                                        <button class="btn btn-primary btn-glow btn-sm">Update</button>
-                                        <button class="btn btn-danger btn-sm">Delete</button>
+                                        <button class="btn btn-primary btn-glow btn-sm">
+                                        <i class="fa-solid fa-pencil"></i> Update</button>
+                                        <button class="btn btn-danger btn-sm">
+                                        <i class="fa-solid fa-trash"></i> Delete</button>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>C003</td>
                                     <td>Services</td>
                                     <td style="width: auto;">
-                                        <button class="btn btn-primary btn-glow btn-sm">Update</button>
-                                        <button class="btn btn-danger btn-sm">Delete</button>
+                                        <button class="btn btn-primary btn-glow btn-sm">
+                                        <i class="fa-solid fa-pencil"></i> Update</button>
+                                        <button class="btn btn-danger btn-sm">
+                                        <i class="fa-solid fa-trash"></i> Delete</button>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>C004</td>
                                     <td>Groceries</td>
                                     <td style="width: auto;">
-                                        <button class="btn btn-primary btn-glow btn-sm">Update</button>
-                                        <button class="btn btn-danger btn-sm">Delete</button>
+                                        <button class="btn btn-primary btn-glow btn-sm">
+                                        <i class="fa-solid fa-pencil"></i> Update</button>
+                                        <button class="btn btn-danger btn-sm">
+                                        <i class="fa-solid fa-trash"></i> Delete</button>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>C005</td>
                                     <td>Hardware</td>
                                     <td style="width: auto;">
-                                        <button class="btn btn-primary btn-glow btn-sm">Update</button>
-                                        <button class="btn btn-danger btn-sm">Delete</button>
+                                        <button class="btn btn-primary btn-glow btn-sm">
+                                        <i class="fa-solid fa-pencil"></i> Update</button>
+                                        <button class="btn btn-danger btn-sm">
+                                        <i class="fa-solid fa-trash"></i> Delete</button>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>C006</td>
                                     <td>Tshirt</td>
                                     <td style="width: auto;">
-                                        <button class="btn btn-primary btn-glow btn-sm">Update</button>
-                                        <button class="btn btn-danger btn-sm">Delete</button>
+                                        <button class="btn btn-primary btn-glow btn-sm">
+                                        <i class="fa-solid fa-pencil"></i> Update</button>
+                                        <button class="btn btn-danger btn-sm">
+                                        <i class="fa-solid fa-trash"></i> Delete</button>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>C007</td>
                                     <td>Food</td>
                                     <td style="width: auto;">
-                                        <button class="btn btn-primary btn-glow btn-sm">Update</button>
-                                        <button class="btn btn-danger btn-sm">Delete</button>
+                                        <button class="btn btn-primary btn-glow btn-sm">
+                                        <i class="fa-solid fa-pencil"></i> Update</button>
+                                        <button class="btn btn-danger btn-sm">
+                                        <i class="fa-solid fa-trash"></i> Delete</button>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>C008</td>
                                     <td>Drinks</td>
                                     <td style="width: auto;">
-                                        <button class="btn btn-primary btn-glow btn-sm">Update</button>
-                                        <button class="btn btn-danger btn-sm">Delete</button>
+                                        <button class="btn btn-primary btn-glow btn-sm">
+                                        <i class="fa-solid fa-pencil"></i> Update</button>
+                                        <button class="btn btn-danger btn-sm">
+                                        <i class="fa-solid fa-trash"></i> Delete</button>
                                     </td>
                                 </tr>
                             </tbody>

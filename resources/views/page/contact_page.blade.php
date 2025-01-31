@@ -67,15 +67,14 @@ Contact Lists
     <div class="card">
         <div class="card-body">
             <div class="row mt-4">
-                <!-- Add margin-top for spacing -->
                 <div class="col-md-12">
-                    <div class="table-responsive">
+                    <div class="table-responsive text-center">
                         <table class="table table-bordered table-striped">
                             <thead>
                                 <tr>
-                                    <th>ID's</th>
-                                    <th>Name</th>
-                                    <th style="width: 200px;">Actions</th>
+                                <th style="width: 10%;">ID's</th> <!-- 10% width for ID column -->
+                                    <th style="width: 70%;">Name</th> <!-- 70% width for Name column -->
+                                    <th style="width: 20%;">Actions</th> <!-- 20% width for Actions column -->
                                 </tr>
                             </thead>
                             <tbody>
@@ -83,45 +82,51 @@ Contact Lists
                                     <td>001</td>
                                     <td>John Doe</td>
                                     <td style="width: auto;">
-                                        <!-- Set width to auto -->
-                                        <button class="btn btn-primary btn-glow btn-sm">Update</button>
-                                        <button class="btn btn-danger btn-sm">Delete</button>
+                                    <button class="btn btn-primary btn-glow btn-sm" data-bs-toggle="modal" data-bs-target="#viewEditModal">
+                                    <i class="fas fa-eye"></i> View Details
+                                    </button>
+                                        <button class="btn btn-danger btn-sm">
+                                        <i class="fa-solid fa-trash"></i> Delete</button>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>002</td>
                                     <td>Jane Smith</td>
                                     <td style="width: auto;">
-                                        <!-- Set width to auto -->
-                                        <button class="btn btn-primary btn-glow btn-sm">Update</button>
-                                        <button class="btn btn-danger btn-sm">Delete</button>
+                                        <button class="btn btn-primary btn-glow btn-sm" data-bs-toggle="modal" data-bs-target="#viewEditModal">
+                                        <i class= "fas fa-eye"></i> View Details</button>
+                                        <button class="btn btn-danger btn-sm">
+                                        <i class="fa-solid fa-trash"></i> Delete</button>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>003</td>
                                     <td>Alice Johnson</td>
                                     <td style="width: auto;">
-                                        <!-- Set width to auto -->
-                                        <button class="btn btn-primary btn-glow btn-sm">Update</button>
-                                        <button class="btn btn-danger btn-sm">Delete</button>
+                                        <button class="btn btn-primary btn-glow btn-sm" data-bs-toggle="modal" data-bs-target="#viewEditModal">
+                                        <i class= "fas fa-eye"></i> View Details</button>
+                                        <button class="btn btn-danger btn-sm">
+                                        <i class="fa-solid fa-trash"></i> Delete</button>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>004</td>
                                     <td>Bob Brown</td>
                                     <td style="width: auto;">
-                                        <!-- Set width to auto -->
-                                        <button class="btn btn-primary btn-glow btn-sm">Update</button>
-                                        <button class="btn btn-danger btn-sm">Delete</button>
+                                        <button class="btn btn-primary btn-glow btn-sm" data-bs-toggle="modal" data-bs-target="#viewEditModal">
+                                        <i class= "fas fa-eye"></i> View Details</button>
+                                        <button class="btn btn-danger btn-sm">
+                                        <i class="fa-solid fa-trash"></i> Delete</button>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>005</td>
                                     <td>Charlie Davis</td>
                                     <td style="width: auto;">
-                                        <!-- Set width to auto -->
-                                        <button class="btn btn-primary btn-glow btn-sm">Update</button>
-                                        <button class="btn btn-danger btn-sm">Delete</button>
+                                        <button class="btn btn-primary btn-glow btn-sm" data-bs-toggle="modal" data-bs-target="#viewEditModal">
+                                        <i class= "fas fa-eye"></i> View Details</button>
+                                        <button class="btn btn-danger btn-sm">
+                                        <i class="fa-solid fa-trash"></i> Delete</button>
                                     </td>
                                 </tr>
                             </tbody>
@@ -135,8 +140,8 @@ Contact Lists
             </div>
         </div>
     </div>
-    <!-- Modal -->
-<!-- Modal -->
+</div>
+<!-- Modal for Add New -->
 <div class="modal fade" id="addNewModal" tabindex="-1" aria-labelledby="addNewModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -222,5 +227,92 @@ Contact Lists
         </div>
     </div>
 </div>
+<!-- Modal for View Details -->
+<div class="modal fade" id="viewEditModal" tabindex="-1" aria-labelledby="viewEditModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="viewEditModalLabel">Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Form inside the modal -->
+                <form id="viewEditForm">
+                    <div class="row">
+                        <!-- Left Column -->
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="viewEditSeqCode" class="form-label">SeQ-Code</label>
+                                <input type="text" class="form-control" id="viewEditSeqCode" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="viewEditF1IdNumber" class="form-label">[F1] ID Number</label>
+                                <input type="text" class="form-control" id="viewEditF1IdNumber" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="viewEditF2Id" class="form-label">[F2] ID</label>
+                                <input type="text" class="form-control" id="viewEditF2Id" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="viewEditCustomerName" class="form-label">[F3] Customer/Consignee Name</label>
+                                <input type="text" class="form-control" id="viewEditCustomerName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="viewEditContactPerson" class="form-label">Contact Person</label>
+                                <input type="text" class="form-control" id="viewEditContactPerson" required>
+                            </div>
+                        </div>
 
-    @endsection
+                        <!-- Right Column -->
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="viewEditGroup" class="form-label">Group</label>
+                                <select class="form-select" id="viewEditGroup" required>
+                                    <option value="" disabled selected>Select a group</option>
+                                    <option value="Customer">Customer</option>
+                                    <option value="Supplier">Supplier</option>
+                                    <option value="VIP">VIP</option>
+                                    <option value="Friends">Friends</option>
+                                    <option value="Unspecified">Unspecified</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="viewEditVatTin" class="form-label">VAT TIN (NOS.)</label>
+                                <input type="text" class="form-control" id="viewEditVatTin" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="viewEditTermsOfPayment" class="form-label">Terms of Payment</label>
+                                <input type="text" class="form-control" id="viewEditTermsOfPayment" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="viewEditAddress" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="viewEditAddress" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="viewEditContactNo" class="form-label">Contact No.</label>
+                                <input type="text" class="form-control" id="viewEditContactNo" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Full-width Row for Note/Comment -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label for="viewEditNoteComment" class="form-label">Note/Comment</label>
+                                <textarea class="form-control" id="viewEditNoteComment" rows="3" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <!-- Save Changes Button -->
+                <button type="submit" form="viewEditForm" class="btn btn-primary btn-glow">Update</button>
+                <!-- Close Button -->
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
