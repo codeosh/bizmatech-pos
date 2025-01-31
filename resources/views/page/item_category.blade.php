@@ -9,7 +9,6 @@ Item Categories
 
 @section('content')
 @include('layout.subnav_header')
-<<<<<<< HEAD
 <style>
     /* Apply Poppins font to the entire page */
     body {
@@ -167,7 +166,6 @@ Item Categories
                             </tbody>
                         </table>
                     </div>
-=======
 <div class="card mt-5 ms-5 me-5">
     <div class="card-body">
         <div class="row justify-content-center">
@@ -176,7 +174,6 @@ Item Categories
                 <div class="form-floating mt-2">
                     <input type="text" id="tblCat_Code" name="tblCat_Code" class="form-control" autocomplete="off" />
                     <label for="tblCat_Code">Code</label>
->>>>>>> c0428cb39c2db964db2c160f6a30154f783c0f76
                 </div>
             </div>
 
@@ -196,7 +193,5 @@ Item Categories
             </div>
         </div>
     </div>
-
-    @include('partials.tblitem_category', ['categories' => $categories])
 </div>
 @endsection
